@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update &&\
- apt-get install -y software-properties-common &&\
+ apt-get install -y software-properties-common vim openssh-server &&\
  add-apt-repository ppa:deadsnakes/ppa &&\
  apt-get update &&\
  apt-get install -y python3.6 python3.6-dev python3-pip
